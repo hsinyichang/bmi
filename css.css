@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.h1{
+    font-size: 60px;
+    text-shadow: 1px 1px 5px rgb(244, 248, 185);
+}
+.table{
+    width: 45%;
+    margin:50px auto;
+    text-align: center;
+    min-width: max-content;
+    font-weight: 900;
+}
+.tr1{
+    background-color: #eee;
+    font-size: 28px;
+
+}
+.tr2{
+    background-color: lightgoldenrodyellow;
+
+}
+.tr3{
+    background-color: lightblue;
+
+}
+.tr4{
+    background-color: lightcoral;
+}
+.input{
+    width: 60%;
+    margin: 25px auto;
+    text-align: center;
+    min-width: max-content;
+    font-weight: 900;
+}
+.input table{
+    font-size: 22px;
+    margin: 15px auto;
+}
+.input input{
+    height: 30px;
+}
+.input div{
+    margin-top: 20px;
+}
+.input div input{
+    font-size: 18px;
+    border-radius: 20px;
+    min-width: max-content;
+    border: 1px solid rgb(252, 252, 252);
+    background-color: #deacf5;
+    box-shadow: 0 0 6px rgb(253, 237, 253);
+}
+.input div input:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.body{
+    z-index: 999;
+}
+/* 背景動畫 */
+body{
+    background:#e5d4ed;
+    overflow:hidden;
+}
+
+.bubble{
+position:absolute;
+top:300px;
+left:0;
+width:100%;
+height:100%;
+/*z-index defult value=1*/
+/*upgrade gpu rendering*/
+transform:translateZ(0);
+}
+
+.bubble li{
+position:absolute;
+list-style:none;
+display:block;
+background:rgba(255,255,255,0.2);
+/*make bubble on page bottom*/
+bottom:-100px; 
+animation:bubble-ani 20s linear infinite;
+border-radius:100%;
+}
+
+/* glow of the bubbles*/
+.bubble li:before {
+    position: absolute;
+    left: 20%;
+    top: 21%;
+    width: 25%;
+    content: '';
+    background: rgba(255,255,255,0.2);
+    display: block;
+    height: 25%;
+    border-radius: 100%;
+}
+
+.bubble li:nth-child(1){
+width:20px;
+height:20px;
+left:15%;
+}
+
+.bubble li:nth-child(2){
+width:40px;
+height:40px;
+left:40%;
+/*在元素裡增加動畫的延遲時間跟速度*/
+animation-duration:8s;
+/* animation-delay:2s; */
+}
+
+.bubble li:nth-child(3){
+width:25px;
+height:25px;
+left:30%;
+/*在元素裡增加動畫的延遲時間跟速度*/
+animation-duration:13s;
+/* animation-delay:3.5s; */
+}
+
+.bubble li:nth-child(4){
+width:60px;
+height:60px;
+left:55%;
+/*在元素裡增加動畫的延遲時間跟速度*/
+animation-duration:18s;
+/* animation-delay:1.5s; */
+}
+
+.bubble li:nth-child(5){
+width:20px;
+height:20px;
+left:65%;
+/*在元素裡增加動畫的延遲時間跟速度*/
+animation-duration:11s;
+/* animation-delay:2s; */
+}
+.bubble li:nth-child(6){
+width:25px;
+height:25px;
+left:70%;
+/*在元素裡增加動畫的延遲時間跟速度*/
+animation-duration:13s;
+/* animation-delay:3.5s; */
+}
+.bubble li:nth-child(7){
+width:60px;
+height:60px;
+left:85%;
+/*在元素裡增加動畫的延遲時間跟速度*/
+animation-duration:18s;
+/* animation-delay:1.5s; */
+}
+
+@keyframes bubble-ani {
+0%{
+    -webkit-transform:translateY(0);
+    transform:translateY(0);
+}
+100%{
+    -webkit-transform:translateY(-1080px);
+    transform:translateY(-1080px);
+}
+}
