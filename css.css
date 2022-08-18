@@ -13,6 +13,14 @@
     min-width: max-content;
     font-weight: 900;
 }
+table tr{
+    height: 60px;
+}
+table{
+    border: 3px solid rgb(253, 253, 253);
+    border-collapse: collapse;
+}
+
 .tr1{
     background-color: #eee;
     font-size: 28px;
@@ -57,6 +65,17 @@
 .input div input:hover{
     cursor: pointer;
     box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.input button{
+    font-size: 18px;
+    border-radius: 20px;
+    min-width: max-content;
+    border: 1px solid rgb(252, 252, 252);
+    background-color: #deacf5;
+    box-shadow: 0 0 6px rgb(253, 237, 253);
+}
+.input button:hover{
+    cursor: pointer;
 }
 .body{
     z-index: 999;

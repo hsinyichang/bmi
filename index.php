@@ -61,11 +61,11 @@ if(empty($_GET)  && empty($_POST)){//陣列值是空的就跑出表單
         <table>
             <tr>
                 <td>身高(cm)：</td>
-                <td><input type="number" name="height"></td>
+                <td><input type="number" name="height" placeholder="輸入身高(cm)"></td>
             </tr>
             <tr>
                 <td>體重(kg)：</td>
-                <td><input type="number" name="weight"></td>
+                <td><input type="number" name="weight" placeholder="輸入體重(kg)"></td>
             </tr>
         </table>
         <div>
@@ -78,17 +78,16 @@ if(empty($_GET)  && empty($_POST)){//陣列值是空的就跑出表單
 }else{//陣列值填好後就跑出下面結果
 
 ?>
-    <h1 style="font-size:3rem;text-align:center">
-你的BMI值為:<?=$bmi;?>
+<div class="input">
+    <div class="h1">
+        你的BMI值為:<?=$bmi;?>
+    </div>
+    <h2>判定結果為:<?=$result;?></h2>
 
-</h1>
-<h2 style="text-align:center">判定結果為:<?=$result;?></h2>
-
-<div style="text-align:center">
-
-    <a href="index.php"><button>回到BMI計算</button></a>
+    <div>
+        <a href="index.php"><button>回到BMI計算</button></a>
+    </div>
 </div>
-
 <?php
 }
 ?>
